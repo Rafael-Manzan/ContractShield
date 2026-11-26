@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/contatos.css">
+    <title>Contatos | Contract Shield</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar" aria-label="Navegação principal">
+                <div class="headerImgLogo">
+                    <a class="headerLogoLink" href="index.html" aria-label="Contract Shield - Home">
+                        <img class="headerLogo" src="../img/IMG-20260806-WA0001.jpg" alt="Contract Shield">
+                    </a>
+                </div>
+                <div class="navBarDiv1">
+                    <ul class="navul">
+                        <li class="navlink"><a class="navlinkA" href="index.html">Home</a></li>
+                        <li class="navlink"><a class="navlinkA" href="sobre.html">Sobre</a></li>
+                        <li class="navlink"><a class="navlinkA" href="servicos.html">Serviços</a></li>
+                        <li class="navlink"><a class="navlinkA" href="contatos.html" aria-current="page">Contatos</a></li>
+                    </ul>
+                </div>
+                <div class="navBarDiv2">
+                    <button class="themeButton" type="button" aria-label="Modo escuro (visual)">
+                        <img class="themeIcon" src="../img/dark-mode.webp" alt="">
+                    </button>
+                    <a class="loginButton" href="login.html">Entrar</a>
+                    <a class="registerButton" href="cadastro.html">Cadastrar</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="main contentPage">
+        <div class="pageContainer">
+            <section class="pageIntro">
+                <p class="pageEyebrow">FALE COM A EQUIPE</p>
+                <h1>Estamos aqui para conversar</h1>
+                <p class="pageLead">Dúvidas sobre o projeto, sugestões para o catálogo de riscos ou interesse acadêmico: deixe sua mensagem no formulário demonstrativo.</p>
+            </section>
+            <section class="contactLayout">
+                <div class="contactNote">
+                    <span class="infoCardNumber">CONTRACT SHIELD</span>
+                    <h2>Um protótipo aberto a ideias</h2>
+                    <p>O projeto explora maneiras de tornar cláusulas importantes mais fáceis de encontrar e entender.</p>
+                    <p class="mutedNote">O formulário é apenas visual nesta versão e não envia mensagens.</p>
+                </div>
+                <form class="formCard" action="#" method="get">
+                    <div class="formField">
+                        <label for="contact-name">Nome</label>
+                        <input id="contact-name" name="nome" type="text" placeholder="Seu nome completo">
+                    </div>
+                    <div class="formField">
+                        <label for="contact-email">E-mail</label>
+                        <input id="contact-email" name="email" type="email" placeholder="voce@email.com">
+                    </div>
+                    <div class="formField">
+                        <label for="contact-subject">Assunto</label>
+                        <input id="contact-subject" name="assunto" type="text" placeholder="Sobre o que quer falar?">
+                    </div>
+                    <div class="formField">
+                        <label for="contact-message">Mensagem</label>
+                        <textarea id="contact-message" name="mensagem" rows="5" placeholder="Escreva sua mensagem"></textarea>
+                    </div>
+                    <button class="ctaButton ctaPrimaryButton" type="button">Enviar mensagem</button>
+                    <p class="formNote">Protótipo: os dados não são enviados nem armazenados.</p>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footerInner">
+            <a class="footerLogoLink" href="index.html" aria-label="Contract Shield - página inicial">
+                <img class="footerLogo" src="../img/IMG-20260806-WA0001.jpg" alt="Logo da empresa Contract Shield">
+            </a>
+            <p class="footerDisclaimer">Protótipo acadêmico de análise de contratos. Nenhuma decisão jurídica deve se basear apenas nesta ferramenta.</p>
+        </div>
+    </footer>
+</body>
+</html>
