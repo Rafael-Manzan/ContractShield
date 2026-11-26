@@ -1,0 +1,63 @@
+@import url("shared.css");
+
+.contactLayout {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    align-items: start;
+    gap: 32px;
+}
+
+.contactNote,
+.formCard {
+    padding: 32px;
+}
+
+.contactNote h2 {
+    margin-top: 20px;
+    color: #16085f;
+    font-size: 30px;
+    line-height: 1.3;
+}
+
+.contactNote p {
+    margin-top: 12px;
+    color: #59689e;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.contactNote .mutedNote {
+    color: #7781a7;
+    font-size: 13px;
+}
+
+.formCard {
+    display: grid;
+    gap: 20px;
+}
+
+.formCard .ctaButton {
+    width: 100%;
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.formNote {
+    color: #7781a7;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+@media (max-width: 760px) {
+    .contactLayout {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+@media (max-width: 420px) {
+    .contactNote,
+    .formCard {
+        padding: 24px;
+    }
+}
