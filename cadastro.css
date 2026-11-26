@@ -1,0 +1,110 @@
+@import url("shared.css");
+
+.accountMain {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 64px 24px 88px;
+}
+
+.accountCard {
+    width: min(100%, 500px);
+    padding: 40px;
+    border: 1px solid #e8e7ef;
+    border-radius: 24px;
+    background-color: #ffffff;
+    box-shadow: 0 18px 40px rgb(22 8 95 / 9%);
+}
+
+.accountCard .pageEyebrow {
+    margin-bottom: 12px;
+}
+
+.accountCard h1 {
+    color: #16085f;
+    font-size: 34px;
+}
+
+.accountLead {
+    margin-top: 12px;
+    color: #59689e;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.accountNotice {
+    margin: 24px 0;
+    padding: 13px 15px;
+    border: 1px solid #b5eaf2;
+    border-radius: 12px;
+    background-color: #f0fbfd;
+    color: #397f8a;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.accountCard .formField {
+    margin-top: 18px;
+}
+
+.accountSubmit {
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    padding: 0 20px;
+    border-radius: 999px;
+    background-color: #f58b16;
+    box-shadow: 0 12px 24px rgb(22 8 95 / 10%);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.accountSubmit:hover {
+    background-color: #e97c0b;
+}
+
+.accountSubmit:focus-visible {
+    outline: 2px solid #6b81d8;
+    outline-offset: 3px;
+}
+
+.accountSwitch,
+.accountBack {
+    display: block;
+    margin-top: 22px;
+    color: #59689e;
+    font-size: 14px;
+    text-align: center;
+}
+
+.accountSwitch a,
+.accountBack {
+    color: #16085f;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.accountBack {
+    margin-top: 18px;
+    font-size: 13px;
+}
+
+@media (max-width: 420px) {
+    .accountMain {
+        min-height: auto;
+        padding: 48px 20px 64px;
+    }
+
+    .accountCard {
+        padding: 28px 24px;
+    }
+
+    .accountCard h1 {
+        font-size: 30px;
+    }
+}
