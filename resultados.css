@@ -1,0 +1,129 @@
+@import url("shared.css");
+
+.reportIntro {
+    max-width: 900px;
+}
+
+.reportSummary {
+    display: grid;
+    grid-template-columns: minmax(220px, 0.55fr) minmax(0, 1fr);
+    gap: 36px;
+    margin-bottom: 28px;
+    padding: 30px;
+    border: 1px solid #e8e7ef;
+    border-radius: 22px;
+    background-color: #ffffff;
+    box-shadow: 0 14px 28px rgb(22 8 95 / 6%);
+}
+
+.reportLabel {
+    color: #59689e;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+}
+
+.reportSummary strong {
+    display: block;
+    margin: 12px 0;
+    color: #16085f;
+    font-size: 48px;
+    line-height: 1;
+}
+
+.reportSummary strong span {
+    color: #59689e;
+    font-size: 20px;
+}
+
+.reportMeta {
+    display: grid;
+    align-content: center;
+    gap: 12px;
+    padding-left: 32px;
+    border-left: 1px solid #e8e7ef;
+    color: #16085f;
+    font-size: 14px;
+}
+
+.reportMeta span {
+    display: inline-block;
+    min-width: 160px;
+    color: #59689e;
+}
+
+.riskList {
+    display: grid;
+    gap: 16px;
+}
+
+.riskItem {
+    padding: 26px 30px;
+    border-left: 4px solid #f58b16;
+}
+
+.riskItem h2 {
+    margin-top: 14px;
+    color: #16085f;
+    font-size: 21px;
+}
+
+.riskItem p {
+    margin-top: 12px;
+    color: #59689e;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.riskItem .suggestion {
+    padding: 12px 14px;
+    border-radius: 10px;
+    background-color: #f7f8fc;
+}
+
+.suggestion strong {
+    color: #16085f;
+}
+
+.pageActions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 28px;
+}
+
+@media (max-width: 760px) {
+    .reportSummary {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .reportMeta {
+        padding: 22px 0 0;
+        border-top: 1px solid #e8e7ef;
+        border-left: 0;
+    }
+}
+
+@media (max-width: 420px) {
+    .reportSummary {
+        gap: 22px;
+        padding: 24px;
+    }
+
+    .reportMeta span {
+        display: block;
+        margin-bottom: 4px;
+    }
+
+    .riskItem {
+        padding: 24px;
+    }
+
+    .pageActions {
+        flex-direction: column;
+    }
+
+    .pageActions .ctaButton {
+        width: 100%;
+    }
+}
