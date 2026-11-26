@@ -1,0 +1,53 @@
+@import url("shared.css");
+
+.profileGrid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.4fr) minmax(260px, 0.6fr);
+    align-items: start;
+    gap: 24px;
+}
+
+.profileCard,
+.profileAside .noticeCard {
+    padding: 32px;
+}
+
+.profileCard .tableHeading {
+    margin-bottom: 26px;
+}
+
+.profileCard .formField + .formField {
+    margin-top: 18px;
+}
+
+.profileCard input:disabled {
+    background-color: #f7f8fc;
+    color: #7d86a8;
+    opacity: 1;
+}
+
+.profileAside {
+    display: grid;
+    gap: 20px;
+}
+
+.profileAside .pageEyebrow {
+    margin-bottom: 0;
+}
+
+.profileAside .noticeCard h2 {
+    margin-top: 14px;
+}
+
+@media (max-width: 760px) {
+    .profileGrid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+@media (max-width: 420px) {
+    .profileCard,
+    .noticeCard {
+        padding: 24px;
+    }
+}
