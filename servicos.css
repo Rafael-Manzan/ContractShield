@@ -1,0 +1,161 @@
+@import url("shared.css");
+
+.serviceGrid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.serviceGrid .infoCard {
+    min-height: 220px;
+    padding: 30px;
+}
+
+.serviceGrid .infoCard h2 {
+    margin-top: 24px;
+    color: #16085f;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.serviceGrid .infoCard p {
+    margin-top: 12px;
+    color: #59689e;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.lexmlCard {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    align-items: center;
+    gap: 36px;
+    margin-top: 48px;
+    padding: 36px;
+    border: 1px solid #e8e7ef;
+    border-radius: 22px;
+    background-color: #ffffff;
+    box-shadow: 0 14px 28px rgb(22 8 95 / 6%);
+}
+
+.lexmlCard .pageEyebrow {
+    margin-bottom: 12px;
+}
+
+.lexmlCard h2 {
+    color: #16085f;
+    font-size: 26px;
+    line-height: 1.3;
+}
+
+.lexmlCard > div > p:not(.pageEyebrow) {
+    margin-top: 12px;
+    color: #59689e;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.lexmlCard .lexmlNote {
+    font-size: 14px;
+}
+
+.lexmlSearchForm {
+    display: grid;
+    gap: 12px;
+}
+
+.lexmlFormRow {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: end;
+    gap: 12px;
+}
+
+.lexmlFormRow .ctaButton {
+    min-height: 48px;
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.pageCallout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    margin-top: 56px;
+    padding: 36px;
+    border: 1px solid #e8e7ef;
+    border-radius: 22px;
+    background-color: #ffffff;
+    box-shadow: 0 14px 28px rgb(22 8 95 / 6%);
+}
+
+.pageCallout h2 {
+    color: #16085f;
+    font-size: 26px;
+    line-height: 1.3;
+}
+
+.pageCallout p {
+    margin-top: 10px;
+    color: #59689e;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.pageCallout .ctaButton {
+    flex: 0 0 auto;
+}
+
+@media (max-width: 760px) {
+    .serviceGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .lexmlCard {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 24px;
+    }
+
+    .pageCallout {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 420px) {
+    .serviceGrid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 16px;
+    }
+
+    .serviceGrid .infoCard {
+        min-height: auto;
+        padding: 26px;
+    }
+
+    .lexmlCard {
+        gap: 20px;
+        margin-top: 32px;
+        padding: 26px;
+    }
+
+    .lexmlFormRow {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .lexmlFormRow .ctaButton {
+        width: 100%;
+    }
+
+    .pageCallout {
+        padding: 26px;
+    }
+
+    .pageCallout .ctaButton {
+        width: 100%;
+    }
+}
