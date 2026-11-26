@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/servicos.css">
+    <title>Serviços | Contract Shield</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar" aria-label="Navegação principal">
+                <div class="headerImgLogo">
+                    <a class="headerLogoLink" href="index.html" aria-label="Contract Shield - Home">
+                        <img class="headerLogo" src="../img/IMG-20260806-WA0001.jpg" alt="Contract Shield">
+                    </a>
+                </div>
+                <div class="navBarDiv1">
+                    <ul class="navul">
+                        <li class="navlink"><a class="navlinkA" href="index.html">Home</a></li>
+                        <li class="navlink"><a class="navlinkA" href="sobre.html">Sobre</a></li>
+                        <li class="navlink"><a class="navlinkA" href="servicos.html" aria-current="page">Serviços</a></li>
+                        <li class="navlink"><a class="navlinkA" href="contatos.html">Contatos</a></li>
+                    </ul>
+                </div>
+                <div class="navBarDiv2">
+                    <button class="themeButton" type="button" aria-label="Modo escuro (visual)">
+                        <img class="themeIcon" src="../img/dark-mode.webp" alt="">
+                    </button>
+                    <a class="loginButton" href="login.html">Entrar</a>
+                    <a class="registerButton" href="cadastro.html">Cadastrar</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="main contentPage">
+        <div class="pageContainer">
+            <section class="pageIntro">
+                <p class="pageEyebrow">O QUE O PROTÓTIPO MOSTRA</p>
+                <h1>Análise de contratos, com clareza</h1>
+                <p class="pageLead">Você envia um PDF e recebe um parecer visual com as cláusulas que merecem discussão antes da assinatura. Nesta versão, o fluxo é demonstrativo.</p>
+            </section>
+            <section class="serviceGrid" aria-label="Recursos demonstrados">
+                <article class="infoCard">
+                    <span class="infoCardNumber">01</span>
+                    <h2>Cláusulas sinalizadas</h2>
+                    <p>Trechos de atenção aparecem com referência de cláusula e página para conferência no original.</p>
+                </article>
+                <article class="infoCard">
+                    <span class="infoCardNumber">02</span>
+                    <h2>Níveis de gravidade</h2>
+                    <p>Risco alto em laranja e risco médio em ciano, com uma leitura visual simples.</p>
+                </article>
+                <article class="infoCard">
+                    <span class="infoCardNumber">03</span>
+                    <h2>Explicação clara</h2>
+                    <p>O motivo do alerta e uma sugestão prática de negociação para cada cláusula.</p>
+                </article>
+                <article class="infoCard">
+                    <span class="infoCardNumber">04</span>
+                    <h2>Medidor de risco</h2>
+                    <p>Um indicador resume o risco geral do contrato em uma escala visual demonstrativa.</p>
+                </article>
+                <article class="infoCard">
+                    <span class="infoCardNumber">05</span>
+                    <h2>Leitura por página</h2>
+                    <p>O exemplo apresenta páginas processadas e uma estimativa de tempo de leitura.</p>
+                </article>
+                <article class="infoCard">
+                    <span class="infoCardNumber">06</span>
+                    <h2>Relatório demonstrativo</h2>
+                    <p>Veja como os alertas e as sugestões poderiam ser organizados em um parecer.</p>
+                </article>
+            </section>
+            <section class="lexmlCard" aria-labelledby="lexml-title">
+                <div>
+                    <p class="pageEyebrow">CONSULTA JURÍDICA</p>
+                    <h2 id="lexml-title">Pesquise no LexML</h2>
+                    <p>Consulte legislação, jurisprudência e outras referências jurídicas no portal oficial LexML.</p>
+                    <p class="lexmlNote">A pesquisa é enviada ao LexML. Ela não envia nem analisa seu contrato.</p>
+                </div>
+                <form class="lexmlSearchForm" action="https://www.lexml.gov.br/busca/search" method="get" target="_blank" rel="noopener">
+                    <div class="lexmlFormRow">
+                        <div class="formField">
+                            <label for="lexml-query">O que você quer pesquisar?</label>
+                            <input id="lexml-query" name="keyword" type="search" maxlength="200" placeholder="Ex.: Código Civil, LGPD" required>
+                        </div>
+                        <button class="ctaButton ctaPrimaryButton" type="submit">Pesquisar <span aria-hidden="true">&rarr;</span></button>
+                    </div>
+                    <p class="mutedNote">Os resultados e os links para as fontes serão exibidos no site do LexML.</p>
+                </form>
+            </section>
+            <section class="pageCallout">
+                <div>
+                    <h2>Pronto para conhecer o fluxo?</h2>
+                    <p>O envio e a análise são simulados; nenhum documento é processado nesta versão.</p>
+                </div>
+                <a class="ctaButton ctaPrimaryButton" href="enviar-contrato.html">Ver a demonstração <span aria-hidden="true">&rarr;</span></a>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footerInner">
+            <a class="footerLogoLink" href="index.html" aria-label="Contract Shield - página inicial">
+                <img class="footerLogo" src="../img/IMG-20260806-WA0001.jpg" alt="Logo da empresa Contract Shield">
+            </a>
+            <p class="footerDisclaimer">Protótipo acadêmico de análise de contratos. Nenhuma decisão jurídica deve se basear apenas nesta ferramenta.</p>
+        </div>
+    </footer>
+</body>
+</html>
