@@ -1,0 +1,55 @@
+@import url("shared.css");
+
+.uploadCard {
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto 28px;
+    padding: 52px 32px;
+    border-style: dashed;
+    border-color: #b7eaf3;
+    background-color: #fbfeff;
+    text-align: center;
+}
+
+.noticeCard {
+    padding: 32px;
+}
+
+.uploadMark {
+    width: 58px;
+    height: 58px;
+    display: grid;
+    place-items: center;
+    border-radius: 18px;
+    background-color: #e8faff;
+    color: #209bb2;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.uploadCard h2 {
+    margin-top: 24px;
+}
+
+.uploadDetails {
+    margin: 12px 0 26px !important;
+    font-size: 13px !important;
+}
+
+.noticeCard h2 {
+    margin-top: 0;
+}
+
+.noticeCard p {
+    margin-bottom: 0;
+}
+
+@media (max-width: 420px) {
+    .uploadCard,
+    .noticeCard {
+        padding: 24px;
+    }
+}
